@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popas Tălmaciu — Cazare · Restaurant · Evenimente</title>
+<meta name="description" content="Popas Tălmaciu — un loc primitor între oraș și munte. Cazare, restaurant cu terasă și sală de evenimente la poalele Carpaților, Tălmaciu.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Caveat:wght@500&family=Playfair+Display:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="popas/styles.css">
+
+<script>
+  window.TWEAK_DEFAULTS = {
+    "accent": "gold",
+    "mood": "stone",
+    "fontPair": "cormorant"
+  };
+</script>
+</head>
+<body>
+
+<!-- ── Nav ─────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <a href="#home" class="brand">
+    <span class="mono">PT</span>
+    <span class="name">Popas Tălmaciu<small>Est. 2009 · Sibiu</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="#cazare">Cazare</a>
+    <a href="#restaurant">Restaurant</a>
+    <a href="#evenimente">Evenimente</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking" class="nav-cta">Rezervă</a>
+  </div>
+  <button class="menu-toggle" aria-label="meniu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- ── Hero ────────────────────────────────────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="img-bg">
+    <img data-img-slot="hero-curte" alt="Curtea interioară a popasului la asfințit"
+         src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2400&q=80">
+  </div>
+  <div class="container content">
+    <span class="kicker" style="color:var(--gold-faint)">Cazare · Restaurant · Evenimente</span>
+    <h1>Un popas între<br><em>oraș și munte.</em></h1>
+    <p class="lede">La poalele Carpaților, în Tălmaciu — un loc unde mâncarea bună, somnul liniștit și sărbătorile de neuitat se întâlnesc sub același acoperiș.</p>
+    <div class="actions">
+      <a href="#booking" class="btn primary">Rezervă o cameră</a>
+      <a href="#restaurant" class="btn ghost">Descoperă restaurantul</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Coboară</span>
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- ── Booking strip ───────────────────────────────────────────────────── -->
+<form class="booking-strip" id="booking" data-demo="booking">
+  <div class="field">
+    <label for="bk-in">Check-in</label>
+    <input type="date" id="bk-in" name="checkin" required>
+  </div>
+  <div class="field">
+    <label for="bk-out">Check-out</label>
+    <input type="date" id="bk-out" name="checkout" required>
+  </div>
+  <div class="field">
+    <label for="bk-pax">Persoane</label>
+    <select id="bk-pax" name="pax">
+      <option>1 adult</option>
+      <option selected>2 adulți</option>
+      <option>2 adulți, 1 copil</option>
+      <option>3 adulți</option>
+      <option>4 adulți</option>
+    </select>
+  </div>
+  <div class="submit">
+    <button type="submit">Verifică disponibilitatea</button>
+  </div>
+</form>
+
+<!-- ── About / quote ───────────────────────────────────────────────────── -->
+<section class="about section">
+  <div class="container reveal">
+    <div class="quote-mark">"</div>
+    <blockquote>
+      Aici vin oameni pentru o noapte, pentru o masă lungă sau pentru o nuntă — și pleacă cu povești pe care le mai depănă mult timp.
+    </blockquote>
+    <div class="citation">
+      <span class="stars">★ ★ ★ ★ ☆</span> &nbsp; 4.2 din 700+ recenzii
+    </div>
+  </div>
+</section>
+
+<!-- ── Chapter I · Cazare ──────────────────────────────────────────────── -->
+<article class="chapter reveal">
+  <div class="chapter-img">
+    <img data-img-slot="ch-cazare" alt="Cameră dublă cu lumină moale"
+         src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=80">
+  </div>
+  <div class="chapter-text">
+    <div class="chapter-num">I.</div>
+    <span class="kicker">Cazare</span>
+    <h2>Odihnă, pe înțelesul tuturor.</h2>
+    <p>Patru tipuri de camere — de la singura discretă la apartamentul cu vedere spre Cibin. Lenjerii curate, dimineți cu cafea proaspătă și liniștea pe care nu o cumperi în oraș.</p>
+    <p>De la <strong>20 lei</strong> pe noapte pentru o cameră simplă, până la <strong>120 lei</strong> pentru apartamentul nostru.</p>
+    <div class="actions">
+      <a href="#cazare" class="btn primary">Vezi camerele</a>
+      <a href="#booking" class="btn">Rezervă acum <span class="arrow">→</span></a>
+    </div>
+  </div>
+</article>
+
+<!-- ── Chapter II · Restaurant ─────────────────────────────────────────── -->
+<article class="chapter reverse reveal">
+  <div class="chapter-img">
+    <img data-img-slot="ch-restaurant" alt="Restaurant rustic cu mese pregătite pentru cină"
+         src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80">
+  </div>
+  <div class="chapter-text">
+    <div class="chapter-num">II.</div>
+    <span class="kicker">Restaurant</span>
+    <h2>Bucătărie de casă, cu o terasă pe care nu pleci.</h2>
+    <p>Preparate românești cu inflexiuni mediteraneene, un meniu vegetarian separat și — în special — o selecție de cocktailuri pe care oaspeții o pomenesc cel mai des în recenzii.</p>
+    <p>Deschis <strong>luni–duminică, 09:00–21:00</strong>.</p>
+    <div class="actions">
+      <a href="#restaurant" class="btn primary">Vezi meniul</a>
+      <a href="#reserve-table" class="btn">Rezervă o masă <span class="arrow">→</span></a>
+    </div>
+  </div>
+</article>
+
+<!-- ── Chapter III · Evenimente ────────────────────────────────────────── -->
+<article class="chapter reveal">
+  <div class="chapter-img">
+    <img data-img-slot="ch-evenimente" alt="Sală de evenimente pregătită pentru nuntă"
+         src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1600&q=80">
+  </div>
+  <div class="chapter-text">
+    <div class="chapter-num">III.</div>
+    <span class="kicker">Evenimente</span>
+    <h2>Sala noastră, povestea voastră.</h2>
+    <p>Nunți, botezuri, aniversări și evenimente corporate — sala noastră de 200 m² acomodează până la 250 de oaspeți, cu decor, meniu și coordonator inclus.</p>
+    <p>Trimite-ne câteva detalii și primești o ofertă personalizată în <strong>24 de ore</strong>.</p>
+    <div class="actions">
+      <a href="#evenimente" class="btn primary">Vezi sala</a>
+      <a href="#event-form" class="btn">Cere o ofertă <span class="arrow">→</span></a>
+    </div>
+  </div>
+</article>
+
+<!-- ══ Cazare · detail ══════════════════════════════════════════════════ -->
+<section class="cazare section" id="cazare">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker centered">Cazare</span>
+      <h2>Patru tipuri de odihnă</h2>
+      <p class="lede">Camere și un apartament pentru cei care vor să rămână puțin mai mult — fie o noapte, fie un weekend întreg.</p>
+    </div>
+
+    <!-- Featured apartment -->
+    <div class="featured-room reveal">
+      <div class="img">
+        <img data-img-slot="caz-apartament" alt="Apartamentul Cibinului — interior elegant"
+             src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1600&q=80">
+      </div>
+      <div class="info">
+        <span class="badge">Cel mai cerut</span>
+        <h3>Apartamentul Cibinului</h3>
+        <p class="eyebrow">cu vedere spre râu și munți</p>
+        <p class="desc">Un apartament generos cu zonă de living separată, pat king-size și o baie cu cadă. Perfect pentru un weekend romantic sau pentru oaspeții care preferă un colț al lor.</p>
+        <div class="room-facts">
+          <div class="fact"><label>Suprafață</label><div class="value">32 m²</div></div>
+          <div class="fact"><label>Pat</label><div class="value">King-size</div></div>
+          <div class="fact"><label>Capacitate</label><div class="value">2–3 pers.</div></div>
+        </div>
+        <div class="price-row">
+          <div class="price">
+            <div class="from">De la</div>
+            <span class="amount">120 lei</span> <span class="unit">/ noapte</span>
+          </div>
+          <a href="#booking" class="btn primary">Rezervă apartamentul</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smaller rooms grid -->
+    <div class="rooms-grid reveal">
+      <div class="room-card">
+        <div class="img">
+          <img data-img-slot="caz-single" alt="Cameră single"
+               src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80">
+        </div>
+        <div class="info">
+          <h4>Cameră Single</h4>
+          <div class="meta">1 pat single · 12 m²</div>
+          <div class="row">
+            <div class="price"><span class="from">de la</span> <span class="amount">20 lei</span></div>
+            <a href="#booking" class="btn sm">Detalii</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="img">
+          <img data-img-slot="caz-dubla" alt="Cameră dublă"
+               src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80">
+        </div>
+        <div class="info">
+          <h4>Cameră Dublă</h4>
+          <div class="meta">1 pat queen · 18 m²</div>
+          <div class="row">
+            <div class="price"><span class="from">de la</span> <span class="amount">60 lei</span></div>
+            <a href="#booking" class="btn sm">Detalii</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="img">
+          <img data-img-slot="caz-twin" alt="Cameră twin"
+               src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&w=900&q=80">
+        </div>
+        <div class="info">
+          <h4>Cameră Twin</h4>
+          <div class="meta">2 paturi single · 18 m²</div>
+          <div class="row">
+            <div class="price"><span class="from">de la</span> <span class="amount">60 lei</span></div>
+            <a href="#booking" class="btn sm">Detalii</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Restaurant ══════════════════════════════════════════════════════ -->
+<section class="restaurant" id="restaurant">
+  <div class="img-band">
+    <img data-img-slot="rest-band" alt="Interiorul restaurantului"
+         src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2200&q=80">
+    <div class="label">
+      <div class="name">Restaurant Popas</div>
+      <div class="when">Luni–Duminică · 09:00–21:00</div>
+    </div>
+  </div>
+
+  <div class="intro reveal">
+    <div class="container">
+      <span class="kicker centered">Restaurant &amp; Terasă</span>
+      <h2>O masă lungă,<br>cu prieteni.</h2>
+      <p class="lede">Bucătărie românească reinterpretată, cu un meniu vegetarian separat și o carte de cocktailuri pe care chiar și sibienii vin să o încerce. Terasa primește lumina dimineții și aerul răcoros al serii.</p>
+      <div class="badges">
+        <span class="badge">Cocktailuri</span>
+        <span class="badge">Meniu vegetarian</span>
+        <span class="badge">Terasă deschisă</span>
+        <span class="badge">Pet friendly</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-block reveal">
+    <div class="menu-title">extras din meniu</div>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <span class="name">Ciorbă rădăuțeană</span>
+        <span class="desc-line"></span>
+        <span class="price">22 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Salată de sezon<span class="veg" title="vegetarian"></span></span>
+        <span class="desc-line"></span>
+        <span class="price">24 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Mămăligă cu brânză și smântână<span class="veg" title="vegetarian"></span></span>
+        <span class="desc-line"></span>
+        <span class="price">26 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Mici de casă (3 buc.)</span>
+        <span class="desc-line"></span>
+        <span class="price">22 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Legume la grătar cu hummus<span class="veg" title="vegetarian"></span></span>
+        <span class="desc-line"></span>
+        <span class="price">28 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Friptură de porc cu cartofi</span>
+        <span class="desc-line"></span>
+        <span class="price">38 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Paste cu ciuperci pădure<span class="veg" title="vegetarian"></span></span>
+        <span class="desc-line"></span>
+        <span class="price">32 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Cocktail Popas (signature)</span>
+        <span class="desc-line"></span>
+        <span class="price">28 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Vin de casă (carafă)</span>
+        <span class="desc-line"></span>
+        <span class="price">35 lei</span>
+      </div>
+      <div class="menu-item">
+        <span class="name">Papanași cu dulceață<span class="veg" title="vegetarian"></span></span>
+        <span class="desc-line"></span>
+        <span class="price">18 lei</span>
+      </div>
+    </div>
+    <div class="menu-cta">
+      <a href="#" class="btn gold" onclick="event.preventDefault(); alert('Aici va fi link spre PDF-ul meniului complet');">Descarcă meniul complet (PDF)</a>
+    </div>
+  </div>
+
+  <!-- Reserve a table -->
+  <div class="reserve-table" id="reserve-table">
+    <div class="container">
+      <h3>Rezervă o masă</h3>
+      <p class="sub">O seară frumoasă începe cu o rezervare.</p>
+      <form class="reserve-form" data-demo="table">
+        <div class="field">
+          <label for="rt-date">Data</label>
+          <input type="date" id="rt-date" required>
+        </div>
+        <div class="field">
+          <label for="rt-time">Ora</label>
+          <select id="rt-time" required>
+            <option>12:00</option><option>13:00</option><option>14:00</option>
+            <option>18:00</option><option selected>19:00</option><option>20:00</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="rt-pax">Persoane</label>
+          <select id="rt-pax" required>
+            <option>2 persoane</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7+</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Rezervă</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Evenimente ══════════════════════════════════════════════════════ -->
+<section class="evenimente section" id="evenimente">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker centered">Evenimente</span>
+      <h2>Pentru fiecare ocazie<br>care merită amintită.</h2>
+      <p class="lede">Sala noastră de 200 m² și echipa care a coordonat peste 300 de evenimente în 15 ani — pentru nunți, botezuri, aniversări sau întâlniri corporate.</p>
+    </div>
+
+    <div class="event-grid reveal">
+      <div class="event-card">
+        <div class="img">
+          <img data-img-slot="ev-nunta" alt="Aranjament de nuntă"
+               src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+          <div class="label">Nuntă</div>
+        </div>
+        <div class="info">
+          <div class="capacity">80 – 180 invitați</div>
+          <p>De la candelabrul vintage la dansul de noapte. Coordonăm fiecare detaliu — sau pe cele cu care ai nevoie de ajutor.</p>
+          <ul>
+            <li>Decor masă și sală</li>
+            <li>Meniu degustare cu mirii</li>
+            <li>Bar deschis &amp; cocktailuri signature</li>
+            <li>Cazare pentru oaspeți</li>
+          </ul>
+          <a href="#event-form" class="btn primary">Cere ofertă pentru nuntă</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="img">
+          <img data-img-slot="ev-botez" alt="Botez"
+               src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1200&q=80">
+          <div class="label">Botez</div>
+        </div>
+        <div class="info">
+          <div class="capacity">40 – 120 invitați</div>
+          <p>O zi specială cu meniu adaptat pentru copii, spațiu de joacă și fotograf inclus în pachetele extinse.</p>
+          <ul>
+            <li>Meniu special pentru cei mici</li>
+            <li>Scaune și ustensile pentru copii</li>
+            <li>Foto-colț și animatori (opțional)</li>
+            <li>Tort &amp; cofetărie</li>
+          </ul>
+          <a href="#event-form" class="btn primary">Cere ofertă pentru botez</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="img">
+          <img data-img-slot="ev-corporate" alt="Eveniment corporate"
+               src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80">
+          <div class="label">Corporate</div>
+        </div>
+        <div class="info">
+          <div class="capacity">20 – 100 persoane</div>
+          <p>Team building, conferințe, lansări de produs. Sală cu proiector, internet rapid și catering complet.</p>
+          <ul>
+            <li>Proiector + ecran + microfoane</li>
+            <li>Wifi business (250 Mbps)</li>
+            <li>Coffee break &amp; prânz catering</li>
+            <li>Cazare pentru participanți</li>
+          </ul>
+          <a href="#event-form" class="btn primary">Cere ofertă corporate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direct contact strip -->
+    <div class="event-contact reveal">
+      <div class="item">
+        <div class="meta">Sună direct</div>
+        <h4>0770 565 507</h4>
+        <p>Luni–Duminică · 09:00–21:00</p>
+      </div>
+      <div class="item">
+        <div class="meta">Trimite email</div>
+        <h4>evenimente</h4>
+        <p>@popastalmaciu.com</p>
+      </div>
+      <div class="item">
+        <div class="meta">Vino la noi</div>
+        <h4>Str. Unirii FN</h4>
+        <p>Tălmaciu, jud. Sibiu</p>
+      </div>
+    </div>
+
+    <!-- Event request form -->
+    <form class="reserve-table" id="event-form" data-demo="event" style="margin-top:64px; padding: clamp(48px, 6vw, 80px); background: var(--ink);">
+      <div class="container" style="max-width:900px;">
+        <h3 style="color:var(--cream); text-align:center;">Cere o ofertă personalizată</h3>
+        <p class="sub" style="color:rgba(250,246,236,0.65);">Răspundem în maxim 24 de ore. Întrebări simple, ofertă pe înțeles.</p>
+        <div class="reserve-form" style="grid-template-columns: 1fr 1fr;">
+          <div class="field">
+            <label for="ev-name">Nume &amp; telefon</label>
+            <input type="text" id="ev-name" placeholder="Ana Popescu · 07XX XXX XXX" required>
+          </div>
+          <div class="field">
+            <label for="ev-type">Tipul evenimentului</label>
+            <select id="ev-type" required>
+              <option>Nuntă</option>
+              <option>Botez</option>
+              <option>Aniversare</option>
+              <option>Corporate</option>
+              <option>Altul</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ev-date">Data estimată</label>
+            <input type="date" id="ev-date" required>
+          </div>
+          <div class="field">
+            <label for="ev-pax">Număr invitați</label>
+            <input type="number" id="ev-pax" min="10" max="300" placeholder="100" required>
+          </div>
+          <div class="field" style="grid-column: 1 / -1;">
+            <label for="ev-msg">Detalii suplimentare</label>
+            <input type="text" id="ev-msg" placeholder="Tema, meniu special, cazare…">
+          </div>
+          <button type="submit" class="btn" style="grid-column: 1 / -1; justify-content: center; padding: 18px;">Trimite cererea de ofertă</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ══ Contact & Localizare ════════════════════════════════════════════ -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker centered">Localizare &amp; Contact</span>
+      <h2>Vino să ne vezi.</h2>
+      <p class="lede">La 25 de minute de Sibiu, la poalele Munților Lotrului. Aproape de cetăți, mănăstiri și defilee — un punct bun de plecat în drumeții.</p>
+    </div>
+
+    <!-- Map with pins -->
+    <div class="map-wrap reveal">
+      <div class="map-img">
+        <img data-img-slot="map-area" alt="Hartă a zonei Tălmaciu și împrejurimi"
+             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=2000&q=80">
+      </div>
+
+      <div class="map-overlay">
+        <span class="kicker">Tălmaciu &amp; împrejurimi</span>
+        <p>Click pe pini ca să vezi obiectivele turistice din zonă.</p>
+      </div>
+
+      <!-- Main pin -->
+      <div class="map-pin main" style="left:48%; top:58%;" title="Popas Tălmaciu">
+        <div class="head">★</div>
+        <div class="tail"></div>
+        <div class="label">Popas Tălmaciu</div>
+      </div>
+
+      <!-- Attraction pins -->
+      <div class="map-pin" style="left:38%; top:38%;" title="Cetatea Tălmaciu">
+        <div class="head">1</div>
+        <div class="tail"></div>
+      </div>
+      <div class="map-pin" style="left:28%; top:65%;" title="Defileul Oltului">
+        <div class="head">2</div>
+        <div class="tail"></div>
+      </div>
+      <div class="map-pin" style="left:78%; top:22%;" title="Sibiu — Centrul Vechi">
+        <div class="head">3</div>
+        <div class="tail"></div>
+      </div>
+      <div class="map-pin" style="left:62%; top:32%;" title="Mănăstirea Cisnădioara">
+        <div class="head">4</div>
+        <div class="tail"></div>
+      </div>
+      <div class="map-pin" style="left:56%; top:75%;" title="Râul Cibin">
+        <div class="head">5</div>
+        <div class="tail"></div>
+      </div>
+
+      <div class="map-actions">
+        <a href="https://www.google.com/maps/search/?api=1&query=Popas+Talmaciu" target="_blank" rel="noopener" class="btn sm primary">Deschide în Google Maps →</a>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Attractions list -->
+      <div class="attractions reveal">
+        <h3>În împrejurimi</h3>
+        <div class="attractions-list">
+          <div class="attraction">
+            <div class="num">1</div>
+            <div class="name">Cetatea Tălmaciu</div>
+            <div class="desc">ruină medievală · drumeție ușoară</div>
+            <div class="dist">3 km</div>
+          </div>
+          <div class="attraction">
+            <div class="num">2</div>
+            <div class="name">Defileul Oltului</div>
+            <div class="desc">peisaj spectaculos · drumuri pitorești</div>
+            <div class="dist">12 km</div>
+          </div>
+          <div class="attraction">
+            <div class="num">3</div>
+            <div class="name">Sibiu — Centrul Vechi</div>
+            <div class="desc">capitală culturală · 30 min</div>
+            <div class="dist">25 km</div>
+          </div>
+          <div class="attraction">
+            <div class="num">4</div>
+            <div class="name">Mănăstirea Cisnădioara</div>
+            <div class="desc">biserică fortificată · panoramă</div>
+            <div class="dist">15 km</div>
+          </div>
+          <div class="attraction">
+            <div class="num">5</div>
+            <div class="name">Râul Cibin</div>
+            <div class="desc">plimbări de seară · pescuit</div>
+            <div class="dist">500 m</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact card -->
+      <div class="contact-card reveal">
+        <h3>Vorbește cu noi</h3>
+        <div class="phone">0770 565 507</div>
+        <div class="hours">Luni–Duminică · 09:00–21:00</div>
+
+        <div class="info-block">
+          <div class="label">Adresă</div>
+          <div class="value">Strada Unirii FN<br>555700 Tălmaciu, jud. Sibiu</div>
+        </div>
+        <div class="info-block">
+          <div class="label">Email</div>
+          <div class="value">contact@popastalmaciu.com</div>
+        </div>
+        <div class="info-block">
+          <div class="label">Rezervări evenimente</div>
+          <div class="value">evenimente@popastalmaciu.com</div>
+        </div>
+
+        <div class="actions">
+          <a href="https://wa.me/40770565507" target="_blank" rel="noopener" class="btn gold sm">WhatsApp</a>
+          <a href="tel:+40770565507" class="btn sm">Sună acum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="top">
+      <div class="brand-block">
+        <a href="#home" class="brand">
+          <span class="mono">PT</span>
+          <span class="name" style="color:var(--cream)">Popas Tălmaciu<small>Est. 2009 · Sibiu</small></span>
+        </a>
+        <p>Un popas între oraș și munte — pentru oameni care nu se grăbesc.</p>
+      </div>
+
+      <div>
+        <h5>Locul nostru</h5>
+        <ul>
+          <li><a href="#cazare">Cazare</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#evenimente">Evenimente</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>Str. Unirii FN, Tălmaciu</li>
+          <li><a href="tel:+40770565507">0770 565 507</a></li>
+          <li><a href="mailto:contact@popastalmaciu.com">contact@popastalmaciu.com</a></li>
+          <li>09:00 – 21:00 · zilnic</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Urmărește-ne</h5>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.85.27-1.43 1.5-1.43h1.5V4.5c-.3-.04-1.27-.12-2.4-.12-2.4 0-4 1.45-4 4.1V10.5H8v3h2.6V21h2.9z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Google">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4c2.1 0 3.9.7 5.3 2.1l-2.2 2.1c-.6-.5-1.6-1.2-3.1-1.2-2.6 0-4.7 2.2-4.7 4.9 0 2.7 2.1 4.9 4.7 4.9 3 0 4.1-2 4.3-3.4H12v-2.8h7.4c.1.4.1.8.1 1.4 0 4.7-3.2 8.1-7.5 8.1-4.3 0-7.8-3.5-7.8-7.9C4.2 7.5 7.7 4 12 4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>© 2026 Popas Tălmaciu. Toate drepturile rezervate.</div>
+      <div><a href="#">Termeni</a> · <a href="#">Confidențialitate</a> · <a href="#">Cookie-uri</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="popas/script.js"></script>
+</body>
+</html>
